@@ -1,5 +1,24 @@
 extends layout
 
+block scripts
+	script(src='/js/jquery-1.11.0.min.js')
+	script(src='/js/git.js')
+
 block content
-  h1= title
-  p Welcome to #{title}
+	h1= title
+	p Welcome to #{title}
+	p zuhai.jiang
+	p git-gui
+	hr
+	form#git_input
+		fieldset(value='input')
+			label(for='remote') remote:
+			input#remote(name='remote',type='text',style='width:60%')
+			//br
+			//label(for='local') local:
+			//input#local(name='local',type='text',style='width:60%')
+			br
+			input#clone(type='button',value='Clone',onclick='gitClone()')
+			input#clone(type='reset',value='Reset')
+	p Response:
+	textarea#response_text(readOnly='readOnly',style='width:60%;height:200px') Response displayed here.
