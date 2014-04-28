@@ -1,6 +1,6 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'd:\\DevelopTools\\NodeJS\\nodejs\\node.exe',
-1 verbose cli   'd:\\DevelopTools\\NodeJS\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli [ 'd:\\DevelopTool\\node.js\\node\\node.exe',
+1 verbose cli   'd:\\DevelopTool\\node.js\\node\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'start' ]
 2 info using npm@1.4.3
 3 info using node@v0.10.26
@@ -19,8 +19,8 @@
 10 error You can get their info via:
 10 error     npm owner ls application-name
 10 error There is likely additional logging output above.
-11 error System Windows_NT 6.2.9200
-12 error command "d:\\DevelopTools\\NodeJS\\nodejs\\node.exe" "d:\\DevelopTools\\NodeJS\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+11 error System Windows_NT 6.1.7601
+12 error command "d:\\DevelopTool\\node.js\\node\\node.exe" "d:\\DevelopTool\\node.js\\node\\node_modules\\npm\\bin\\npm-cli.js" "start"
 13 error cwd e:\Workspaces\repo\CortexDashboard\git-gui
 14 error node -v v0.10.26
 15 error npm -v 1.4.3

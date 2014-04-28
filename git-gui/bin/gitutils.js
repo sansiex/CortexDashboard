@@ -34,7 +34,7 @@ gitutils.gitClone=function(url,res){
 gitutils.mkdir=function(url,res,dir){
 	var spawn = require('child_process').spawn;
 	console.log('mkdir '+dir);
-	mkdir =  spawn('mkdir',['git'], {cwd:'c:/Users/lenovo/',  env: process.env})
+	mkdir =  spawn('mkdir',['git'], {cwd:dir+'../',  env: process.env})
 
 	
 	mkdir.stdout.on('data', function (data) {
