@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var gitutils = require('../bin/gitutils');
+var gitutils = require('gitutils');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -10,7 +10,7 @@ router.get('/', function(req, res) {
 
 router.post('/git/clone', function (req, res) {
   var remote=req.body.remote;
-  gitutils.gitClone(remote,res);
+  gitutils.gitClone(remote,function(output){res.send(output);});
   //res.send(output);
 });
 
